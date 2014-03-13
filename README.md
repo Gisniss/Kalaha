@@ -1,2 +1,3 @@
 Kalaha
 ======
+Ohjelmoinnin harjoitustyö
