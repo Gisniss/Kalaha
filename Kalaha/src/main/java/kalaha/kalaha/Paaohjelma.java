@@ -8,13 +8,10 @@ package kalaha.kalaha;
  *
  * @author Krista
  */
-public class Pelikuppi extends Kuppi {
-
-    public Pelikuppi(int pisteetAlussa) {
-        super(pisteetAlussa);
+public class Paaohjelma {
+    
+    public static void main(String[] args){
+        Kuppi kuppi=new Kuppi(5);
+        System.out.println(kuppi.getPisteet());
     }
-    
-    
-        
-    
 }

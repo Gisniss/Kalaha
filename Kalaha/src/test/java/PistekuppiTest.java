@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-import kalaha.kalaha.Kuppi;
+import kalaha.kalaha.Pistekuppi;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,9 +15,9 @@ import static org.junit.Assert.*;
  *
  * @author Krista
  */
-public class KuppiTest {
+public class PistekuppiTest {
     
-    public KuppiTest() {
+    public PistekuppiTest() {
     }
     
     @BeforeClass
@@ -30,7 +30,6 @@ public class KuppiTest {
     
     @Before
     public void setUp() {
-        
     }
     
     @After
@@ -38,31 +37,15 @@ public class KuppiTest {
     }
     
     @Test
-    public void kuppiAntaaOikeanPistemaaran(){
-        Kuppi kuppi= new Kuppi(5);
-        int vastaus=kuppi.getPisteet();
-        assertEquals(5,vastaus);
+    public void pistekuppiLisaaPisteita(){
+        Pistekuppi kuppi=new Pistekuppi();
+        kuppi.lisaaPisteita(3);
+        assertEquals(3, kuppi.getPisteet());
     }
     
-    @Test
-    public void kuppiLisaaPisteita(){
-        Kuppi kuppi= new Kuppi(2);
-        kuppi.lisaaPiste();
-        kuppi.lisaaPiste();
-        assertEquals(4,kuppi.getPisteet());
-    }
     
-    @Test
-    public void kuppiPoistaaPisteet(){
-        Kuppi kuppi=new Kuppi(3);
-        kuppi.poistaPisteet();
-        assertEquals(0,kuppi.getPisteet());
-    }
-        
-        
-        
-        
-        // TODO add test methods here.
+    
+    // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
     // @Test

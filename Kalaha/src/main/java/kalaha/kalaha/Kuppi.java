@@ -19,4 +19,12 @@ public class Kuppi {
     public int getPisteet() {
         return pisteet;
     }
+    
+    public void lisaaPiste(){
+        pisteet=pisteet+1;
+    }
+    
+    public void poistaPisteet(){
+        pisteet=0;
+    }
 }
