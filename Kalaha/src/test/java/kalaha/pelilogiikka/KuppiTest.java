@@ -4,7 +4,6 @@ package kalaha.pelilogiikka;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import kalaha.pelilogiikka.Kuppi;
 import org.junit.After;
 import org.junit.AfterClass;
