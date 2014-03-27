@@ -1,9 +1,12 @@
+package kalaha.pelilogiikka;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
-import kalaha.kalaha.Pistekuppi;
+import kalaha.pelilogiikka.Pelikuppi;
+import kalaha.pelilogiikka.Pistekuppi;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,9 +18,9 @@ import static org.junit.Assert.*;
  *
  * @author Krista
  */
-public class PistekuppiTest {
+public class PelikuppiTest {
     
-    public PistekuppiTest() {
+    public PelikuppiTest() {
     }
     
     @BeforeClass
@@ -37,14 +40,11 @@ public class PistekuppiTest {
     }
     
     @Test
-    public void pistekuppiLisaaPisteita(){
-        Pistekuppi kuppi=new Pistekuppi();
-        kuppi.lisaaPisteita(3);
-        assertEquals(3, kuppi.getPisteet());
+    public void pelikupinPistekuppinPisteetOikein(){
+        Pelikuppi kuppi= new Pelikuppi(4,6);
+        kuppi.setPistekuppi(new Pistekuppi(7));
+        assertEquals(0, kuppi.getPistekuppi().getPisteet());
     }
-    
-    
-    
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
