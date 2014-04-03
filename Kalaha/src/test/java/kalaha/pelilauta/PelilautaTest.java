@@ -2,8 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package kalaha.pelilogiikka;
+package kalaha.pelilauta;
 
+import kalaha.pelilauta.Pelilauta;
+import kalaha.pelilauta.Pelikuppi;
+import kalaha.pelilauta.Kuppi;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -62,32 +65,7 @@ public class PelilautaTest {
         assertEquals(14,lauta.getKupit().size());
     }
     
-    @Test
-    public void poistaaPisteet(){
-        Pelilauta lauta=new Pelilauta(5);
-        lauta.poistaPisteet(lauta.getKupit().get(1));
-        assertEquals(0, lauta.getKupit().get(1).getPisteet());
-    }
     
-    @Test
-    public void poistaPisteetPalauttaaOikeanMaaranPisteita(){
-        Pelilauta lauta=new Pelilauta(5);
-        int apu=lauta.poistaPisteet(lauta.getKupit().get(1));
-        assertEquals(5, apu);
-    }
-    
-    @Test
-    public void palauttaaOikeinErikoistilanne2(){
-        Pelilauta lauta=new Pelilauta(5);
-        assertEquals(true, lauta.erikoistilanne2(lauta.getKupit().get(7).getNumero()));
-    }
-    
-    @Test
-    public void jaaPisteetPalauttaaOikeanKupin(){
-        Pelilauta lauta=new Pelilauta(5);
-        Kuppi kuppi=lauta.jaaPisteet(1, 4);
-        assertEquals(5,kuppi.getNumero());
-    }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //

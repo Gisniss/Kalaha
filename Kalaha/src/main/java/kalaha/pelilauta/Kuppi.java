@@ -2,11 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package kalaha.pelilogiikka;
+package kalaha.pelilauta;
 
 /**
  *
  * @author Krista
+ * 
+ * Luokka asettaa kupille pisteet, numeron, vastakkaisen- ja seuraavan kupin.
  */
 public class Kuppi {
 

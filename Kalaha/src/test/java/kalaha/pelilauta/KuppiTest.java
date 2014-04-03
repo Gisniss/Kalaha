@@ -1,10 +1,10 @@
-package kalaha.pelilogiikka;
+package kalaha.pelilauta;
 
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-import kalaha.pelilogiikka.Kuppi;
+import kalaha.pelilauta.Kuppi;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

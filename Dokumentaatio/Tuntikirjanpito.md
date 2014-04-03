@@ -13,3 +13,6 @@ Github:in ja Git:in asennus ja avaimen luonti Github:in ja kotikoneen välille. A
 27.3 Luokkien täydentäminen ja testaus, pit raportin generointi. "Määrittelyvaiheen luokkakaavio" on oikeastaan jo luokkakaavio
 kytkentärajoitteineen.
 7 tuntia
+
+3.4 Pelilogiikan hiomista, käyttöliittymän aloittaminen, ensimmäiset JavaDocit ja sekvenssikaaviot.
+7 tuntia

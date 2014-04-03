@@ -2,11 +2,15 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package kalaha.pelilogiikka;
+package kalaha.pelilauta;
+
+import kalaha.pelilauta.Kuppi;
 
 /**
  *
  * @author Krista
+ * 
+ * Luokka asettaa pelikupille pisteet, numeron ja pistekupin.
  */
 public class Pelikuppi extends Kuppi {
 
