@@ -17,6 +17,11 @@ public class Pistekuppi extends Kuppi {
     public Pistekuppi(int numero) {
         super(0, numero);
     }
+    
+    /**
+     * Lisää pisteitä kuppiin.
+     * @param maara 
+     */
 
     public void lisaaPisteita(int maara) {
         if (maara <= 0) {

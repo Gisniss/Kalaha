@@ -16,3 +16,9 @@ kytkentärajoitteineen.
 
 3.4 Pelilogiikan hiomista, käyttöliittymän aloittaminen, ensimmäiset JavaDocit ja sekvenssikaaviot.
 7 tuntia
+
+9.4 Käyttöliittymien suunnittelua.
+2 tuntia
+
+10.4 Käyttöliittymien suunnittelua ja toteutusta.
+4 tuntia

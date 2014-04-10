@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
@@ -44,7 +45,10 @@ public class AlkuKayttoliittyma implements Runnable{
         container.setLayout(layout);
         JTextArea teksti= new JTextArea("Tervetuloa pelaamaan Kalahaa!\n Valitse kuinka monta pistettä on alussa per kuppi.");
         container.add(teksti);
-        container.add(new AlunValikko());
+        
+        AlunValikko valikko=new AlunValikko(new ValikonKuuntelija());
+        
+        container.add(valikko);
         
         
         

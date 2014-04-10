@@ -7,9 +7,11 @@ package kalaha.kayttoliittyma;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
+import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextArea;
 import javax.swing.WindowConstants;
 
 /**
@@ -21,9 +23,10 @@ import javax.swing.WindowConstants;
 public class PeliKayttoliittyma implements Runnable{
     
     private JFrame frame;
+    private int pisteet;
     
-    public PeliKayttoliittyma(){
-        
+    public PeliKayttoliittyma(int pisteetAlussa){
+        pisteet=pisteetAlussa;
     }
     
     @Override
@@ -41,10 +44,13 @@ public class PeliKayttoliittyma implements Runnable{
     }
     
     private void luoKomponentit(Container container){
+       GridLayout layout = new GridLayout(2,1);
+       container.setLayout(layout);
+       JTextArea teksti= new JTextArea();
+       container.add(teksti);
+       Pelialusta alusta = new Pelialusta(pisteet);
+       container.add(alusta);
        
-        container.add(new JLabel("Kuinka monta pistettä aluksi?"), BorderLayout.CENTER);
-        container.add(new AlunValikko(), BorderLayout.SOUTH);
-        container.add(new Piirtoalusta());
         
         
         

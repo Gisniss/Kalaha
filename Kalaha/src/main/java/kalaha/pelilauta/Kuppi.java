@@ -17,6 +17,7 @@ public class Kuppi {
     private Kuppi vastakkainenKuppi;
     private Kuppi seuraavaKuppi;
 
+    
     public Kuppi(int pisteetAlussa, int numero) {
         pisteet = pisteetAlussa;
         kupinNumero = numero;
@@ -34,10 +35,18 @@ public class Kuppi {
     public int getPisteet() {
         return pisteet;
     }
+    
+    /**
+     * Lisää kuppiin pisteen.
+     */
 
     public void lisaaPiste() {
         pisteet = pisteet + 1;
     }
+    
+    /**
+     * Poistaa kupista kaikki pisteet.
+     */
 
     public void poistaPisteet() {
         pisteet = 0;
