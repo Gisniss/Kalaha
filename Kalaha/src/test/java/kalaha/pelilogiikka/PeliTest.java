@@ -57,20 +57,7 @@ public class PeliTest {
         assertEquals(true, peli.erikoistilanne2(peli.getPelilauta().getKupit().get(7)));
     }
     
-    @Test
-    public void askelEiLisaaPistettaPistekuppiinJosEiOmaPistekuppi1(){
-        Peli peli=new Peli(5);
-        peli.askel(6,14);
-        assertEquals(0,peli.getPelilauta().getKupit().get(14).getPisteet());
-        
-    }
     
-    @Test
-    public void askelLisaaPisteen(){
-        Peli peli= new Peli(5);
-        peli.askel(8, 10);
-        assertEquals(6,peli.getPelilauta().getKupit().get(10).getPisteet());
-    }
     
     @Test
     public void viimeinenPalauttaaOikein(){

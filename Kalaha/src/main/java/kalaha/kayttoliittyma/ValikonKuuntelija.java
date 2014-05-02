@@ -13,14 +13,17 @@ import javax.swing.SwingUtilities;
  * @author Krista
  */
 public class ValikonKuuntelija implements ActionListener {
+    
+   
 
     public ValikonKuuntelija() {
+        
     }
 
     @Override
     public void actionPerformed(ActionEvent a) {
         int pisteet = Integer.parseInt(a.getActionCommand());
-        System.out.println("Nappia painettu");
+        
         PeliKayttoliittyma kayttoliittyma = new PeliKayttoliittyma(pisteet);
         SwingUtilities.invokeLater(kayttoliittyma);
         

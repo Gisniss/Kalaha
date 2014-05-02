@@ -22,3 +22,12 @@ kytkentärajoitteineen.
 
 10.4 Käyttöliittymien suunnittelua ja toteutusta.
 4 tuntia
+
+24.4 Käyttöliittymän toteutusta.
+3 tuntia
+
+25.4 Käyttöliittymän toteutusta.
+2 tuntia
+
+28.4 Käyttöliittymän toteutusta ja pelilogiikan hiomista.
+2.5 tuntia

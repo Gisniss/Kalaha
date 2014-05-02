@@ -2,7 +2,7 @@ Aihem‰‰rittely
 
 
 Aihe: 
-Kalaha-peli. Pelilaudassa on kaksitoistakuppia asetettuna kahteen riviin sek‰ isommat kupit laudan p‰iss‰. 
+Kalaha-peli. Pelilaudassa on kaksitoista kuppia asetettuna kahteen riviin sek‰ isommat kupit laudan p‰iss‰. 
 Pelaajaa l‰hinn‰ oleva kuuden pelikupin rivi on h‰nen lautapuoliskonsa ja oikealla puolella oleva isompi 
 kuppi on h‰nen pistekuppinsa.Pelin tavoitteena on ker‰t‰ omaan pistekuppiin enemm‰n pisteit‰ kuin 
 vastustaja omaansa. Pelin alussa kuppeihin laitetaan valittu m‰‰r‰ pisteit‰ ja pistekupit j‰‰v‰t tyhjiksi. 
