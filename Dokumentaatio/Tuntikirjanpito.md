@@ -31,3 +31,6 @@ kytkentärajoitteineen.
 
 28.4 Käyttöliittymän toteutusta ja pelilogiikan hiomista.
 2.5 tuntia
+
+2.5 Käyttöliittymää, pelilogiikkaa, testausta, dokumentointia. En osannut tehdä jar tiedostoa
+5 tuntia

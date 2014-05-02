@@ -34,21 +34,29 @@ public class Pelilauta {
     public HashMap<Integer,Kuppi> getKupit(){
         return kupit;
     }
-
+/**
+ * Asettaa kupeille vastakkaiset kupit.
+ */
     private void asetaVastakkaisetKupitPelikuppeihin() {
         for (int j = 1; j < 7; j++) {
             kupit.get(j).setVastakkainenKuppi(kupit.get(14 - j));
             kupit.get(14 - j).setVastakkainenKuppi(kupit.get(j));
         }
     }
-
+/**
+ * Asettaa kupeille seuraavat kupit.
+ */
     private void asetaSeuraavatKupit() {
         for (int n = 1; n < 14; n++) {
             kupit.get(n).setSeuraavaKuppi(kupit.get(n + 1));
         }
         kupit.get(14).setSeuraavaKuppi(kupit.get(1));
     }
-
+/**
+ * Luo kaksi pistekuppia ja 12 pelikuppia joihin laitetaan parametrin antaman 
+ * lukumäärän verran pisteitä.
+ * @param pisteetAlussa 
+ */
     private void luoKupit(int pisteetAlussa) {
         kupit.put(7, new Pistekuppi(7));
         kupit.put(14, new Pistekuppi(14));
@@ -57,7 +65,9 @@ public class Pelilauta {
             kupit.put(14 - i, new Pelikuppi(pisteetAlussa, 14 - i));
         }
     }
-
+/**
+ * Asettaa pelikupeille pistekupit.
+ */
     private void asetaPistekupit() {
         for (int k = 1; k < 7; k++) {
             Pelikuppi kuppi = (Pelikuppi) kupit.get(k);

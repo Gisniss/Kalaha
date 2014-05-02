@@ -37,6 +37,11 @@ public class Peli {
     public Pelilauta getPelilauta() {
         return pelilauta;
     }
+    
+    /**
+     * metodi saa parametrina kupin numeron jonka pisteet se jakaa ja tarkistaa menikö viimeinen piste tyhjään kuppiin.
+     * @param numero 
+     */
 
     public void kierros(int numero) {
         int pisteet = poistaPisteet(pelilauta.getKupit().get(numero));
@@ -52,6 +57,10 @@ public class Peli {
 
 
     }
+    /**
+     * Suorittaa tietokoneen vuorolla tapahtuvat toimitukset.
+     * valitsee randomilla epätyhjän kupin numeron ja siirtää pisteitä.
+     */
 
     public void tietokoneenVuoro() {
         Random random = new Random();
@@ -65,6 +74,12 @@ public class Peli {
             tietokoneenVuoro();
         }
     }
+    /**
+     * tarkistaa onko kuppi tyhjä eli ovatko sen pisteet 0.
+     * jos kuppi on tyhjä palauttaa true.
+     * @param numero
+     * @return 
+     */
     
     private boolean onkoTyhja(int numero){
         if(pelilauta.getKupit().get(numero).getPisteet()==0){
@@ -74,10 +89,10 @@ public class Peli {
     }
 
     /**
-     * Liikuttaa yhtä pistettä eteenpäin.
+     * Jakaa valitun kupin pisteet seuraaviin.
      *
      * @param numero1 , kupin numero josta piste on alkuperäisesti otettu.
-     * @param numero2 , kupin numero johon piste laitetaan.
+     * @param numero2 , kupin pisteet
      */
     public void jaaPisteet(int numero, int pisteet) {
         Kuppi kuppi = pelilauta.getKupit().get(numero);
@@ -158,6 +173,13 @@ public class Peli {
             return false;
         }
     }
+    
+    /**
+     * jakaa pelaaja pisteet.
+     * @param kuppi
+     * @param apu
+     * @param pisteet 
+     */
 
     private void jaaPelaajanPisteet(Kuppi kuppi, Kuppi apu, int pisteet) {
         for (int i = 0; i < pisteet; i++) {
@@ -168,6 +190,12 @@ public class Peli {
             apu.lisaaPiste();
         }
     }
+    /**
+     * jakaa vastustajan eli tietokoneen pisteet.
+     * @param kuppi
+     * @param apu
+     * @param pisteet 
+     */
 
     private void jaaTietokoneenPisteet(Kuppi kuppi, Kuppi apu, int pisteet) {
         for (int i = 0; i < pisteet; i++) {
@@ -178,10 +206,19 @@ public class Peli {
             apu.lisaaPiste();
         }
     }
+    /**
+     * lisää parametrina annetut pisteet kyseisen kupin pistekuppiin.
+     * @param kuppi
+     * @param pisteet 
+     */
 
     private void lisaaPisteetPistekuppiin(Pelikuppi kuppi, int pisteet) {
         kuppi.getPistekuppi().lisaaPisteita(pisteet);
     }
+    /**
+     * tarkistaa onko peli ohi. Palauttaa true jos peli on ohi.
+     * @return 
+     */
 
     public boolean loppuikoPeli() {
         if(onkoPelaajanKupitTyhjat()==true||onkoTietokoneenKupitTyhjat()==true){
@@ -191,6 +228,10 @@ public class Peli {
         return false;
 
     }
+    /**
+     * Tarkistaa onko pelaajan kaikki pelikupit tyhjät jos on niin palauttaa true.
+     * @return 
+     */
 
     private boolean onkoPelaajanKupitTyhjat() {
         for (int i = 1; i < 7; i++) {
@@ -201,6 +242,11 @@ public class Peli {
         return true;
     }
     
+    /**
+     * Tarkistaa onko tietokoneen kaikki pelikupit tyhjät.
+     * @return 
+     */
+    
     private boolean onkoTietokoneenKupitTyhjat(){
         for (int i = 8; i < 14; i++) {
             if (pelilauta.getKupit().get(i).getPisteet() != 0) {
@@ -209,6 +255,9 @@ public class Peli {
         }
         return true;
     }
+    /**
+     * siirtää jäljellä olevat pisteet sen pelaajan pistekuppin kenen kaikki pelikupit ovat tyhjiä.
+     */
     
     public void siirraLoputPisteet(){
         if(onkoPelaajanKupitTyhjat()==true){

@@ -11,6 +11,7 @@ import javax.swing.SwingUtilities;
 /**
  *
  * @author Krista
+ * Luokka kuuntelee alunValikon nappeja
  */
 public class ValikonKuuntelija implements ActionListener {
     

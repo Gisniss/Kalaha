@@ -16,6 +16,8 @@ import kalaha.pelilogiikka.Peli;
 /**
  *
  * @author Krista
+ * 
+ * Luokka luo alemmat tekstialueet ja napit Pelikayttoliittymaan.
  */
 public class Pelialusta extends JPanel {
 
@@ -64,6 +66,12 @@ public class Pelialusta extends JPanel {
 
 
     }
+    
+    /**
+     * Luo tekstialueita.
+     * @param lkm
+     * @return 
+     */
 
     private ArrayList<JTextArea> luoTekstialueita(int lkm) {
         ArrayList<JTextArea> lista = new ArrayList<JTextArea>();
@@ -75,6 +83,11 @@ public class Pelialusta extends JPanel {
         }
         return lista;
     }
+    /**
+     * Luo nappeja.
+     * @param lkm
+     * @return 
+     */
 
     private ArrayList<JButton> luoNappeja(int lkm) {
         ArrayList<JButton> lista = new ArrayList<JButton>();
@@ -89,6 +102,9 @@ public class Pelialusta extends JPanel {
         }
         return lista;
     }
+    /**
+     * asettaa kuppeja vastaaviin tekstialueisiin ja kuppeihin pisteet.
+     */
 
     private void asetaPisteetKuppeihin() {
         for (int i = 0; i < 6; i++) {
@@ -107,6 +123,9 @@ public class Pelialusta extends JPanel {
         tekstialueet.get(11).setText(b);
         
     }
+    /**
+     * päivittää ikkunan.
+     */
 
     public void paivita() {
         asetaPisteetKuppeihin();

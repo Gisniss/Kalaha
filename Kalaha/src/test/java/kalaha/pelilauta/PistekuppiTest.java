@@ -57,6 +57,13 @@ public class PistekuppiTest {
         kuppi.lisaaPisteita(0);
         assertEquals(0, kuppi.getPisteet());
     }
+    
+    @Test
+    public void eiTeeMitaanJosLisattavienMaaraEiPositiivinen(){
+        Pistekuppi kuppi=new Pistekuppi(7);
+        kuppi.lisaaPisteita(-1);
+        assertEquals(0,kuppi.getPisteet());
+    }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //

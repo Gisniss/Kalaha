@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 /**
  *
  * @author Krista
+ * Luokka luo napit Alkukayttoliittymaan.
  */
 public class AlunValikko extends JPanel {
 

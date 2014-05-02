@@ -15,6 +15,7 @@ import kalaha.pelilogiikka.Peli;
 /**
  *
  * @author Krista
+ * Luokka kuuntelee Pelikayttoliittimassa olevan pelialustan nappeja.
  */
 public class NapinKuuntelija implements ActionListener {
 
@@ -62,6 +63,9 @@ public class NapinKuuntelija implements ActionListener {
         alusta.paivita();
 
     }
+    /**
+     * asettaa lopputekstin pelin loppumisen jälkeen ylimmäiseen tekstikenttään.
+     */
 
     public void peliLoppui() {
         if (peli.getPelilauta().getKupit().get(7).getPisteet() > peli.getPelilauta().getKupit().get(14).getPisteet()) {

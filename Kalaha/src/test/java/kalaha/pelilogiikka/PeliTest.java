@@ -65,6 +65,38 @@ public class PeliTest {
        
         assertEquals(peli.getPelilauta().getKupit().get(5), peli.viimeinen(2, 3));
     }
+    
+    @Test
+    public void kierrosJakaaPisteet(){
+        Peli peli= new Peli(5);
+        peli.kierros(5);
+        assertEquals(6,peli.getPelilauta().getKupit().get(6).getPisteet());
+        
+        
+    }
+    
+    @Test
+    public void tietokoneenVuoroJakaaPisteet(){
+        Peli peli= new Peli(5);
+        peli.tietokoneenVuoro();
+        assertEquals(6,peli.getPelilauta().getKupit().get(13).getPisteet());
+    }
+    
+    @Test
+    public void jaaPisteetJakaaPisteet(){
+        Peli peli=new Peli(5);
+        peli.jaaPisteet(5, 13);
+        assertEquals(6,peli.getPelilauta().getKupit().get(5).getPisteet());
+    }
+    
+    @Test
+    public void erikoistilanne1Toimii(){
+        Peli peli=new Peli(5);
+        peli.jaaPisteet(5, 13);
+        assertEquals(false,peli.erikoistilanne1(peli.getPelilauta().getKupit().get(5)));
+    }
+    
+   
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //

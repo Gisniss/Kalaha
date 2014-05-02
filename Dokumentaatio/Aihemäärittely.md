@@ -23,3 +23,10 @@ Pelaaja
 Pelaajan toiminnot:
 -kuppien aloitus pistemäärän valinta
 -pelaaminen
+
+Rakennekuvaus:
+Peliin liittyy yksi pelilauta.
+Pelilautaan liittyy kaksi pistekuppia ja 12 pelikuppia.
+Pelikuppi ja pistekuppi perivät luokan kuppi.
+
+En osannut tehdä jar tiedostoa

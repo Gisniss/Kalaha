@@ -19,7 +19,7 @@ import kalaha.pelilogiikka.Peli;
  *
  * @author Krista
  * 
- * Luokka luo ikkunan jossa peli pelataan.
+ * Luokka luo ikkunan jossa peli pelataan ja luo Pelialustan.
  */
 public class PeliKayttoliittyma implements Runnable{
     
